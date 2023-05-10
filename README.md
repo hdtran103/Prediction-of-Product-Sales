@@ -45,23 +45,74 @@ Data: The data used in this analysis is from the sales data of a retail company.
 
 ##### The bar plot shows significant variation in sales volume across different store locations. Some stores consistently perform better than others, and some regions have higher overall sales volumes than others. This suggests that there may be regional or demographic differences in customer preferences or purchasing behavior.
 
-## Model:
+## Machine Learning Methods:
 
-	•	The decision tree regression model was selected as the final model as it had a higher R-squared value and lower RMSE compared to the linear regression model.
-	•	The final model had an R-squared value of 0.37 and an RMSE of 1433.33. 
-	•	This means that the model can explain 37% of the variation in sales and has an average error of $1433.33 in predicting sales.
+	•	Linear Regression Model
+	•	Simple Regression Tree Model	
+	•	Decision Tree Regressor Model
+	•	Tuned Decision Tree Regressor Model
+	•	Random Forest Regressor Model
+	•	Tuned Random Forest Regressor Model
+
+## Linear Regression Model
+
+We built a linear regression model to predict sales based on the available features. The model was trained and evaluated using the following metrics:
+
+- R^2 Score: 0.5791
+- Root Mean Squared Error (RMSE): 1069.5154
+
+## Simple Regression Tree Model
+
+- R^2 Score: 0.1743
+- Root Mean Squared Error (RMSE): 1498.0634
+
+## Decision Tree Regressor Model
+
+A decision tree regressor model was implemented to predict sales. The model was trained and evaluated using the following metrics:
+
+- R^2 Score: 0.6145
+- RMSE: 1456.8912
+
+## Tuned Decision Tree Regressor Model
+
+To improve the performance of the decision tree model, hyperparameter tuning was performed using grid search. The best parameters were selected based on the R^2 score. The performance of the tuned model is as follows:
+
+- R^2 Score: 0.6279
+- RMSE: 1423.7801
+
+## Random Forest Regressor Model
+
+We also utilized a random forest regressor model to predict sales. The model was trained and evaluated using the following metrics:
+
+- R^2 Score: 0.7954
+- RMSE: 1012.4567
+
+## Tuned Random Forest Regressor Model
+
+Hyperparameter tuning was performed on the random forest model using grid search. The best parameters were selected based on the R^2 score. The performance of the tuned model is as follows:
+
+- R^2 Score: 0.6112
+- RMSE: 1028.0056
+
+- The Final Model Chosen was the Random Forest Regressor Model as our final model due to its superior performance. It achieved the highest R^2 score of 0.7954, indicating that it explains a significant portion of the variance in the sales data. Additionally, it has the lowest RMSE value of 1012.4567, suggesting that it has a smaller average prediction error compared to other models.
+
+
+# Recommendations
+
+Recommendation would be to deploy and use the Random Forest Regressor Model for sales prediction tasks. It has demonstrated strong predictive capabilities and is expected to provide accurate sales forecasts. However, continuously monitoring and evaluating the model's performance as new data becomes available. This will help identify any changes in the underlying patterns and ensure the model remains reliable and effective.
+
+## Conclusion and Future Work
+
+In this analysis, we compared the performance of different regression models for sales prediction. The results showed that the tuned random forest regressor model performed the best in terms of both R^2 score and RMSE.
+
+For future work, additional feature engineering techniques can be explored to improve the model's performance. Furthermore, gathering more data or incorporating external factors could also enhance the accuracy of the sales prediction.
+
+
 
 
 ## Limitations:
 
-	•	The limitations of this analysis include the limited scope of the dataset and the lack of information on external factors that may impact sales. In future analyses, it would be beneficial to include additional data sources and external factors such as economic indicators or marketing campaigns.
-
-## Recommendations:
-#### Based on the analysis, the retail company can increase sales and profit margins by focusing on the following:
-
-	•	Increasing the prices of high-quality or more desirable products.
-	•	Identifying the stores and regions that consistently perform better and investing in those areas.
-	•	Understanding regional or demographic differences in customer preferences and purchasing behavior.
+	•	The limitations of this analysis include the limited scope of the dataset and the lack of information on external factors that may impact sales. In future analyses, it would be beneficial to include additional data sources and external factors such as economic indicators or marketing campaign
 
 
 ## For Further Information
